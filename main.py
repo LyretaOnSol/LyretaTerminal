@@ -1,10 +1,10 @@
-from agent.core import AeuraAgent
+from agent.core import LyretaAgent
 from agent.commands import CommandHandler
 from config import CONFIG
 
 if __name__ == "__main__":
     # Initialize the AI Agent
-    agent = AeuraAgent(name=CONFIG["agent_name"])
+    agent = LyretaAgent(name=CONFIG["agent_name"])
     command_handler = CommandHandler(agent)
 
     # Start the Agent
@@ -15,4 +15,4 @@ if __name__ == "__main__":
             print("Shutting down Aeura. Goodbye!")
             break
         response = command_handler.handle_command(user_input)
-        print(f"Aeura> {response}")
+        print(f"Lyreta> {response}")
