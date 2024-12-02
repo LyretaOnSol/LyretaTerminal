@@ -1,5 +1,5 @@
 class AeuraAgent:
-    """Core class for the Aeura AI Agent."""
+    """Core class for the Lyreta AI Agent."""
     
     def __init__(self, name="Aeura"):
         self.name = name
